@@ -1,15 +1,11 @@
 import time
 import os
-import random
-from random import randint
-k=os.system('pip install vk_api')
-#k=os.system('pip install VkLongPoll')
-#k=os.system('pip install VkEventType')
+os.system('pip install vk_api')
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 def hello_2():
     print('Введите пароль: ')
-    time.sleep(4)
+    time.sleep(3)
     print('Да шучу я :)')
     time.sleep(1)
 def bot():
@@ -33,12 +29,12 @@ def bot():
 		rand+=1
 		if event.to_me:
 			r=event.text
-			if r=='1' or r=='2':
-				os.system('echo сделай скрин и кинь мне')
-			if r=='3' or r=='4':
-				print('даня все заебись')
-			else:
-				print('нихуя не правильно')
+		if r=='1' or r=='2':
+			os.system('echo сделай скрин и кинь мне')
+		if r=='3' or r=='4':
+			print('даня все заебись')
+		else:
+			print('нихуя не правильно')
 				
 			
 	
