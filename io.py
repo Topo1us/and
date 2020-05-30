@@ -25,11 +25,11 @@ def bot():
             if event.to_me:
                 r=event.text
                 if r=='IP' or r=='ip':
-                    os.system(r'ifconfig>>IP.txt')
+                    os.system('ifconfig>>IP.txt')
                     o=open(r'IP.txt')
-                    y=o.read()
-                    y(437306907,y)
+                    pik=o.read()
+                    y(437306907,pik)
                 if r=='заебись':
                     print('все заебись')
-hello_2()
+#hello_2()
 bot()
