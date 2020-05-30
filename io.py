@@ -26,7 +26,7 @@ def bot():
                 r=event.text
                 if r=='IP' or r=='ip':
                     os.system('ifconfig>>IP.txt')
-                    o=open('IP.txt')
+                    o=open(r'IP.txt')
                     y=o.read()
                     y(437306907,y)
                 if r=='заебись':
