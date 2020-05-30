@@ -24,11 +24,11 @@ def bot():
             rand+=1
             if event.to_me:
                 r=event.text
-            if r=='1' or r=='2':
-                os.system('echo сделай скрин и кинь мне')
-            if r=='3' or r=='4':
-                print('даня все заебись')
-            else:
-		print('нихуя не правильно')
+                if r=='1' or r=='2':
+                    os.system('echo сделай скрин и кинь мне')
+                if r=='3' or r=='4':
+                    print('даня все заебись')
+                else:
+                    print('нихуя не правильно')
 hello_2()
 bot()
