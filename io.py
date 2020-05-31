@@ -21,15 +21,14 @@ def bot():
     o=open(r'red.txt')
     rik=o.read()
     y(437306907,rik)
-    time.sleep(5)
-    os.system('termux-torch on')
-    os.system('termux-vibrate -d 1000')
-    os.system('echo если эта строка появилась то все правильно, напиши вк')
+    y(437306907,rik)
+#    time.sleep(5)
+#    os.system('termux-torch on')
+#    os.system('termux-vibrate -d 1000')
+#    os.system('echo если эта строка появилась то все правильно, напиши вк')
     for event in longpoll.listen():
         if event.type==VkEventType.MESSAGE_NEW:
             rand+=1
             if event.to_me:
-                r=event.text
-                if r=='lol':
-                    y(event.user_id,'lol kek')
+                break
 bot()
