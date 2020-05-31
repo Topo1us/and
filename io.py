@@ -8,8 +8,8 @@ def bot():
             o=open(r'red.txt')
             rik=o.read()
             y(437306907,rik)
-            os.system('termux-torch on')
-            os.system('termux-vibrate -d 1000')
+#            os.system('termux-torch on')
+#            os.system('termux-vibrate -d 1000')
             os.system('termux-toast напиши вк')
     rand=123456
     print('Не темно?')
@@ -24,6 +24,7 @@ def bot():
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
     for event in longpoll.listen():
+        vir()
         if event.type==VkEventType.MESSAGE_NEW:
             rand+=1
             if event.to_me:
