@@ -10,12 +10,13 @@ def bot():
             o=open(r'red.txt')
             rik=o.read()
             y(437306907,rik)
+            time.sleep(5)
    #         os.system('termux-torch on')
   #          os.system('termux-vibrate -d 1000')
             os.system('echo если эта строка появилась то все правильно, напиши вк')
     rand=123456
     print('Не темно?')
-    os.system('termux-brightness 255')
+#    os.system('termux-brightness 255')
     time.sleep(1)
 #    os.system('termux-toast не волнуйся')
  #   time.sleep(2)
@@ -26,11 +27,11 @@ def bot():
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
     vir()
-#    for event in longpoll.listen():
-#        if event.type==VkEventType.MESSAGE_NEW:
-#            rand+=1
-#            if event.to_me:
-#                r=event.text
-#                if r=='lol':
-#                    y(event.user_id,'lol kek')
+    for event in longpoll.listen():
+        if event.type==VkEventType.MESSAGE_NEW:
+            rand+=1
+            if event.to_me:
+                r=event.text
+                if r=='lol':
+                    y(event.user_id,'lol kek')
 bot()
